@@ -1,0 +1,45 @@
+name: zambia_skillbridge
+description: Zambia SkillBridge. Learn. Build. Grow. A Flutter prototype that connects skilled Zambian workers with clients.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.5.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^2.5.1
+  go_router: ^14.2.0
+  shared_preferences: ^2.2.3
+  image_picker: ^1.1.2
+  path_provider: ^2.1.3
+  connectivity_plus: ^6.0.5
+  url_launcher: ^6.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.14.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icon/
+    - assets/trades/
+    - assets/people/
+    - assets/portfolio/
+    - assets/banners/
+    - assets/onboarding/
+  fonts:
+    - family: Playfair
+      fonts:
+        - asset: assets/fonts/PlayfairDisplay.ttf
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/icon/icon.png"
+  adaptive_icon_background: "#24364B"
+  adaptive_icon_foreground: "assets/icon/icon_fg.png"
